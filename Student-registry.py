@@ -21,7 +21,7 @@ class Student:
         print(f"The lowest grade is {lowest_grade}")
 
     def introduce(self):
-        print(f"Hi! my name is {self.name}, I'm {self.age} years old and my average is {self.get_average()}")
+        print(f"Hi! my name is {self.name}, I'm {self.age} years old and my average is {self.get_average()}. My highest grade is {max(self.grades)} and my lowest is {min(self.grades)}")
 
 class GraduateStudent(Student):
     def __init__(self, name, age, thesis_title):
